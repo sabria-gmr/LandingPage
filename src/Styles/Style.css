@@ -1,0 +1,33 @@
+*{font-family: 'Poppins', sans-serif;}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.visited:hover {
+    content: '';
+    display: block;
+     /* Set the color of the underline */
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.visited:after {
+    content: '';
+    display: block;
+    border-bottom: 2.5px solid #8B5CF6; /* Set the color of the underline */
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optional: Set the height to 100% of the viewport height for vertical centering */
+}
+
+.centered-img {
+  max-width:100%; /* Optional: Ensure the image does not exceed its container's width */
+}
+
